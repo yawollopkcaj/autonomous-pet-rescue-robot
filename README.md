@@ -108,8 +108,3 @@ KiCad, SolidWorks, GitHub, Logic Analyzer, Oscilloscope, Linux SSH.
 | ![](images/hardware.jpg) | ![](images/pcb.jpg) | ![](images/test_run.gif) |
 
 ---
-
-## 📜 License
-This project is licensed under the [MIT License](LICENSE).
-
----
