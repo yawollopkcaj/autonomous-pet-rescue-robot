@@ -1,21 +1,21 @@
-# Autonomous Search-and-Rescue Robot
+# Autonomous Pet-Rescue Robot
 
-_A fully autonomous robot built entirely from scratch — integrating custom PCBs, ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
+_A fully autonomous robot built entirely **from scratch** - integrating ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
 
 **Finalist** in a competitive challenge to rescue the most "pets" (stuffed animals) from a simulated burning building in the shortest time.
 
 ---
 
 ## 📌 Overview
-Our team of four designed, built, and programmed an autonomous search-and-rescue robot over two months, working ~80 hours/week in a dedicated project lab. The robot navigated a multi-terrain course, located "pets" via IR and computer vision, picked them up with a robotic arm, and launched them to safety via a custom flywheel mechanism.
+Our team of four designed, built, and programmed an autonomous pet-rescue robot over two months, working ~80 hours/week in a dedicated project lab. The robot navigated a multi-terrain course, located "pets" via IR and computer vision, picked them up with a robotic arm, and launched them to safety via a custom flywheel mechanism.
 
 Key features:
 - **Custom hardware**: Designed and fabricated all PCBs and electrical circuits in-house.
-- **Full-stack control**: Firmware in **C** using ESP-IDF + FreeRTOS; computer vision on Raspberry Pi 4.
-- **Perception & ML**: Custom-trained YOLOv5 Nano model for live object detection with optimized framerate.
+- **Full-stack control**: Firmware in **C** using **ESP-IDF + FreeRTOS**; computer vision on Raspberry Pi 4.
+- **Perception & ML**: Custom-trained **YOLOv5** Nano model for live object detection with optimized hyperparameters.
 - **Signal processing**: FFT-based IR beacon tracking and frequency-specific control.
 - **Multi-sensor navigation**: IR line following with phototransistors and emitters, beacon localization, and ML vision.
-- **Advanced actuation**: Robotic arm with inverse kinematics; flywheel launcher for object evacuation.
+- **Advanced actuation**: Robotic arm with **inverse kinematics**; flywheel launcher for object evacuation.
 
 ---
 
@@ -25,7 +25,7 @@ Key features:
 - **Machine Learning & Computer Vision**
   - Custom-trained YOLOv5 Nano model for detecting pets on-course.
   - Tuned hyperparameters, validated model accuracy, and benchmarked performance.
-  - Optimized Raspberry Pi 4 (Linux OS) for real-time inference:
+  - Optimized Raspberry Pi OS (Linux based) for real-time inference:
     - Overclocking
     - SSH development workflow
     - Performance profiling and bottleneck removal
@@ -39,7 +39,7 @@ Key features:
 - **Firmware Development**
   - Wrote FreeRTOS tasks for navigation, arm control, and sensor fusion on ESP32.
   - Implemented custom sensor drivers and UART drivers for Pi–ESP32 communication.
-  - Solved ADC sampling timing issues in ESP-IDF by restructuring sampling tasks to avoid timeouts.
+  - Used thread-safe practices by incorperating mutexes, semephores, and event groups for inter-task dependencies
 
 - **Electrical Hardware**
   - Designed PCB layouts for motor drivers, sensor interfaces, and communication buses.
@@ -64,10 +64,10 @@ Key features:
 ---
 
 ## 📈 Results
-- **Finalist** in competition with consistently high pet rescue counts.
-- Reduced navigation and targeting errors through sensor calibration and ML tuning.
+- **Finalist** in competition with consistently 60% pet rescue.
+- Reduced navigation and targeting errors by 50% through sensor calibration and ML tuning.
 - Integrated hardware, firmware, and ML with no major system failures during final runs.
-- Achieved stable 20+ FPS real-time object detection on Raspberry Pi 4 with YOLOv5 Nano.
+- Achieved stable 10+ FPS real-time object detection on Raspberry Pi 4 with YOLOv5 Nano.
 
 ---
 
