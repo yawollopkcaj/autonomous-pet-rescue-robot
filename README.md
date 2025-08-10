@@ -94,10 +94,10 @@ KiCad, OnShape, VS Code, Platform IO, GitHub, Logic Analyzer, Oscilloscope, Linu
 ---
 
 ## Project Links
--  [ESP-IDF Firmware Repository](https://github.com/enph-summer-2025/rollingohms)  
--  [PCB Design Repository](https://github.com/enph-summer-2025/rollings-ohms-pcbs)  
--  [Signal Processing Repository](https://github.com/enph-summer-2025/ir_esp)  
+-  [ESP-IDF Firmware Repository](https://github.com/enph-summer-2025/rollingohms)
 -  [Machine Learning Repository](https://github.com/enph-summer-2025/computer_vision)  
+-  [PCB Design Repository](https://github.com/enph-summer-2025/rollings-ohms-pcbs)  
+-  [Signal Processing Repository](https://github.com/enph-summer-2025/ir_esp) 
 -  [Demo Video](https://drive.google.com/file/d/1vrrbmOzqqDvycMX8IW5s0msy8z-JhquK/view?usp=share_link)
 
 ---
