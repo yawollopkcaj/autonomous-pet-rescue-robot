@@ -106,10 +106,10 @@ KiCad, OnShape, VS Code, Platform IO, GitHub, Logic Analyzer, Oscilloscope, Linu
 ## Gallery
 | Hardware Prototype | PCB Layout | Test Run |
 |---|---|---|
-| ![](![IMG_3508](https://github.com/user-attachments/assets/6bb5e4c5-df32-4862-bc72-65598efe63d5) | ![](images/pcb.jpg) | ![](images/test_run.gif) |
+| ![aaa](![IMG_3508](https://github.com/user-attachments/assets/6bb5e4c5-df32-4862-bc72-65598efe63d5) | ![](![IMG_4622](https://github.com/user-attachments/assets/88687e06-f992-4f9a-a738-78387d2a51ed) | ![](images/test_run.gif) |
 
 ---
 
 ## Media Coverage
-- Featured in [Local News Article](https://vancouver.citynews.ca/2025/08/07/vancouver-ubc-robots-engineering-physics/) for innovative approach to autonomous pet-rescue.
-- [Local News Article](https://www.ctvnews.ca/vancouver/article/ubc-robot-competition-demonstrates-student-skill-perseverance/)
+- **Interview Feature:** [UBC Engineering Physics students race to save ‘pets’ with robots](https://vancouver.citynews.ca/2025/08/07/vancouver-ubc-robots-engineering-physics/) for innovative approach to autonomous pet-rescue.
+- **Competition Overview:** [UBC robot competition demonstrates student skill, perseverance](https://www.ctvnews.ca/vancouver/article/ubc-robot-competition-demonstrates-student-skill-perseverance/)
