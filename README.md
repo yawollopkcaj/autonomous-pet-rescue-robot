@@ -6,7 +6,7 @@ _A fully autonomous robot built entirely **from scratch** - integrating ESP-IDF/
 
 ---
 
-## 📌 Overview
+## Overview
 Our team of four designed, built, and programmed an autonomous pet-rescue robot over two months, working ~80 hours/week in a dedicated project lab. The robot navigated a multi-terrain course, located "pets" via IR and computer vision, picked them up with a robotic arm, and launched them to safety via a custom flywheel mechanism.
 
 Key features:
@@ -19,7 +19,7 @@ Key features:
 
 ---
 
-## 🛠️ My Contributions
+## My Contributions
 **Role:** Software & Electrical Systems Engineer  
 
 - **Machine Learning & Computer Vision**
@@ -34,12 +34,13 @@ Key features:
 - **Signal Processing**
   - Designed FFT-based algorithms to detect a 10 kHz central IR beacon for positional tracking.
   - Built FFT-based IR emission/reception for autonomous control, filtering specific frequency bands.
-  - Developed Python GUIs for validating and testing sensor data and hardware.
+ 	-	Applied convolutional signal matching on IR sensor streams to robustly identify “pet” targets and filter out environmental noise.
 
 - **Firmware Development**
   - Wrote FreeRTOS tasks for navigation, arm control, and sensor fusion on ESP32.
   - Implemented custom sensor drivers and UART drivers for Pi–ESP32 communication.
   - Used thread-safe practices by incorperating mutexes, semephores, and event groups for inter-task dependencies
+  - Developed Python GUIs for validating and testing sensor data and hardware.
 
 - **Electrical Hardware**
   - Designed PCB layouts for motor drivers, sensor interfaces, and communication buses.
@@ -48,7 +49,7 @@ Key features:
 
 ---
 
-## 🔍 Challenges & Solutions
+## Challenges & Solutions
 - **IR interference from environment**  
   *Issue:* Sunlight and other IR sources caused erratic sensor behavior.  
   *Solution:* Added FFT filtering to isolate specific IR frequency bands (10 kHz), though we learned to apply stricter band-pass processing earlier in future designs.
@@ -63,7 +64,7 @@ Key features:
 
 ---
 
-## 📈 Results
+## Results
 - **Finalist** in competition with consistently 60% pet rescue.
 - Reduced navigation and targeting errors by 50% through sensor calibration and ML tuning.
 - Integrated hardware, firmware, and ML with no major system failures during final runs.
@@ -71,9 +72,9 @@ Key features:
 
 ---
 
-## 🖥️ Technologies Used
+## Technologies Used
 **Hardware:**  
-ESP32 microcontroller, Raspberry Pi 4 + Pi Camera, MG996R servos, ToF sensors (VL6180X), Hall effect sensors, IR emitters & phototransistors, custom PCBs, flywheel launcher.
+ESP32 microcontroller, Raspberry Pi 4 + Pi Camera, MG996R servos, ToF sensors (VL6180X), Hall effect sensors, IR emitters & phototransistors, custom PCBs.
 
 **Software & Firmware:**  
 ESP-IDF, FreeRTOS, C, Python, YOLOv5, OpenCV, NumPy, Matplotlib, TensorFlow Lite.
@@ -82,27 +83,27 @@ ESP-IDF, FreeRTOS, C, Python, YOLOv5, OpenCV, NumPy, Matplotlib, TensorFlow Lite
 FFT-based detection & filtering, band-pass IR frequency tracking.
 
 **Tools:**  
-KiCad, SolidWorks, GitHub, Logic Analyzer, Oscilloscope, Linux SSH.
+KiCad, OnShape, VS Code, Platform IO, GitHub, Logic Analyzer, Oscilloscope, Linux SSH.
 
 ---
 
-## 📊 System Architecture
+## System Architecture
 ![System Architecture](images/system_architecture.png)  
 *High-level diagram showing hardware and software integration.*
 
 ---
 
-## 📂 Project Links
-- 📂 [PCB Design Repository](https://github.com/yourteam/pcb-repo)  
-- 📂 [ESP-IDF Firmware Repository](https://github.com/yourteam/firmware-repo)  
-- 📂 [Signal Processing Repository](https://github.com/yourteam/signal-processing-repo)  
-- 📂 [Machine Learning Repository](https://github.com/yourteam/ml-repo)  
-- 📹 [Demo Video](https://linktodemo.com)  
-- 📄 [Full Technical Report (PDF)](docs/report.pdf)  
+## Project Links
+-  [PCB Design Repository](https://github.com/yourteam/pcb-repo)  
+-  [ESP-IDF Firmware Repository](https://github.com/yourteam/firmware-repo)  
+-  [Signal Processing Repository](https://github.com/yourteam/signal-processing-repo)  
+-  [Machine Learning Repository](https://github.com/yourteam/ml-repo)  
+-  [Demo Video](https://linktodemo.com)  
+-  [Full Technical Report (PDF)](docs/report.pdf)  
 
 ---
 
-## 📷 Gallery
+## Gallery
 | Hardware Prototype | PCB Layout | Test Run |
 |---|---|---|
 | ![](images/hardware.jpg) | ![](images/pcb.jpg) | ![](images/test_run.gif) |
