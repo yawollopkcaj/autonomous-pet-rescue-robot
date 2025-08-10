@@ -34,7 +34,7 @@ Key features:
 - **Signal Processing**
   - Designed FFT-based algorithms to detect a 10 kHz central IR beacon for positional tracking.
   - Built FFT-based IR emission/reception for autonomous control, filtering specific frequency bands.
- 	-	Applied convolutional signal matching on IR sensor streams to robustly identify “pet” targets and filter out environmental noise.
+  - Applied convolutional signal matching on IR sensor streams to robustly identify “pet” targets and filter out environmental noise.
 
 - **Firmware Development**
   - Wrote FreeRTOS tasks for navigation, arm control, and sensor fusion on ESP32.
