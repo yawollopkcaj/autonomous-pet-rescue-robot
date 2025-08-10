@@ -98,7 +98,7 @@ KiCad, OnShape, VS Code, Platform IO, GitHub, Logic Analyzer, Oscilloscope, Linu
 -  [ESP-IDF Firmware Repository](https://github.com/yourteam/firmware-repo)  
 -  [Signal Processing Repository](https://github.com/yourteam/signal-processing-repo)  
 -  [Machine Learning Repository](https://github.com/yourteam/ml-repo)  
--  [Demo Video](https://drive.google.com/file/d/1kcM3zMjd0KLm1ArnvowRdBvshPUQtJRH/view?usp=share_link)
+-  [Demo Video]([https://drive.google.com/file/d/1kcM3zMjd0KLm1ArnvowRdBvshPUQtJRH/view?usp=share_link](https://drive.google.com/file/d/1vrrbmOzqqDvycMX8IW5s0msy8z-JhquK/view?usp=share_link))
 
 ---
 
