@@ -79,7 +79,7 @@ Key features:
 
 
 <p align="center">
-  <img src="attachments/robot_summer_fast.gif" width="600" />
+  <img src="attachments/robot_summer_fast.gif" width="400" />
 </p>
 
 ---
