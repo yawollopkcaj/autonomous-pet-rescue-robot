@@ -1,6 +1,9 @@
 # Autonomous Pet-Rescue Robot
 
 <p align="center">
+<caption><b>Figure 1: Team 6 Group Photo</b></caption>
+</p>
+<p align="center">
   <img src="attachments/team_photo.jpeg" alt="Robot" width="600">
 </p>
 
@@ -74,6 +77,9 @@ Key features:
 - Integrated hardware, firmware, and ML with no major system failures during final runs.
 - Achieved stable 10+ FPS real-time object detection on Raspberry Pi 4 with YOLOv5 Nano.
 
+<p align="center">
+<caption><b>Figure 2: Software Architecture Diagram</b></caption>
+</p>
 <p align="center">
   <img src="attachments/robot_summer_fast.gif" width="600" />
 </p>
