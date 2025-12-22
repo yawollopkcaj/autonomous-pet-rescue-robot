@@ -1,7 +1,7 @@
 # Autonomous Pet-Rescue Robot
 
 <p align="center">
-  <img src="attachments/robot.JPG" alt="Robot" width="600">
+  <img src="attachments/team_photo.jpeg" alt="Robot" width="600">
 </p>
 
 _A fully autonomous robot built entirely **from scratch** - integrating ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
