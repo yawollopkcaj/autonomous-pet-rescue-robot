@@ -24,6 +24,10 @@ Key features:
 - **Multi-sensor navigation**: IR line following with phototransistors and emitters, beacon localization, and ML vision.
 - **Advanced actuation**: Robotic arm with **inverse kinematics**; flywheel launcher for object evacuation.
 
+<p align="center">
+  <img src="attachments/robot_summer_fast.gif" width="400" />
+</p>
+
 ---
 
 ## My Contributions
@@ -76,11 +80,6 @@ Key features:
 - Reduced navigation and targeting errors by 50% through sensor calibration and ML tuning.
 - Integrated hardware, firmware, and ML with no major system failures during final runs.
 - Achieved stable 10+ FPS real-time object detection on Raspberry Pi 4 with YOLOv5 Nano.
-
-
-<p align="center">
-  <img src="attachments/robot_summer_fast.gif" width="400" />
-</p>
 
 ---
 
