@@ -96,7 +96,10 @@ KiCad, OnShape, VS Code, Platform IO, GitHub, Logic Analyzer, Oscilloscope, Linu
 ---
 
 ## System Architecture
-![System Architecture](attachments/pet-rescue_robot_system_architecture.png)  
+
+<p align="center">
+  <img src="attachments/pet-rescue_robot_system_architecture.png" width="600" />
+</p> 
 *High-level diagram showing hardware and software integration.*
 
 ---
