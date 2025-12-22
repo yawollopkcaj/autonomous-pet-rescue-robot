@@ -75,7 +75,7 @@ Key features:
 - Achieved stable 10+ FPS real-time object detection on Raspberry Pi 4 with YOLOv5 Nano.
 
 <p align="center">
-  <img src="attachments/robot_summer_fast.gif" alt="Robot" width="600">
+  <img src="attachments/robot_summer_fast.gif" width="600" />
 </p>
 
 ---
