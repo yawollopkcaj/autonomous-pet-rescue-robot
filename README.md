@@ -77,9 +77,7 @@ Key features:
 - Integrated hardware, firmware, and ML with no major system failures during final runs.
 - Achieved stable 10+ FPS real-time object detection on Raspberry Pi 4 with YOLOv5 Nano.
 
-<p align="center">
-<caption><b>Figure 2: Software Architecture Diagram</b></caption>
-</p>
+
 <p align="center">
   <img src="attachments/robot_summer_fast.gif" width="600" />
 </p>
@@ -104,9 +102,11 @@ KiCad, OnShape, VS Code, Platform IO, GitHub, Logic Analyzer, Oscilloscope, Linu
 ## System Architecture
 
 <p align="center">
+<caption><b>Figure 2: System Architecture Diagram</b></caption>
+</p>
+<p align="center">
   <img src="attachments/pet-rescue_robot_system_architecture.png" width="600" />
 </p> 
-*High-level diagram showing hardware and software integration.*
 
 ---
 
