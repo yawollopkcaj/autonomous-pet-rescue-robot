@@ -74,6 +74,10 @@ Key features:
 - Integrated hardware, firmware, and ML with no major system failures during final runs.
 - Achieved stable 10+ FPS real-time object detection on Raspberry Pi 4 with YOLOv5 Nano.
 
+<p align="center">
+  <img src="attachments/robot_summer_fast.gif" alt="Robot" width="600">
+</p>
+
 ---
 
 ## Technologies Used
