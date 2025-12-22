@@ -1,7 +1,7 @@
 # Autonomous Pet-Rescue Robot
 
 <p align="center">
-<caption><b>Figure 1: Team 6 Group Photo</b></caption>
+<caption><b>Team 6 Group Photo</b></caption>
 </p>
 <p align="center">
   <img src="attachments/team_photo.jpeg" alt="Robot" width="600">
@@ -25,7 +25,7 @@ Key features:
 - **Advanced actuation**: Robotic arm with **inverse kinematics**; flywheel launcher for object evacuation.
 
 <p align="center">
-<caption><b>Figure 2: Full Robot Competition Run (10x Speed)</b></caption>
+<caption><b>Full Robot Competition Run (10x Speed)</b></caption>
 </p>
 <p align="center">
   <img src="attachments/robot_summer_fast.gif" width="400" />
@@ -104,7 +104,7 @@ KiCad, OnShape, VS Code, Platform IO, GitHub, Logic Analyzer, Oscilloscope, Linu
 ## System Architecture
 
 <p align="center">
-<caption><b>Figure 3: System Architecture Diagram</b></caption>
+<caption><b>Figure 1: System Architecture Diagram</b></caption>
 </p>
 <p align="center">
   <img src="attachments/pet-rescue_robot_system_architecture.png" width="600" />
