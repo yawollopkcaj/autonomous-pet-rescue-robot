@@ -25,6 +25,9 @@ Key features:
 - **Advanced actuation**: Robotic arm with **inverse kinematics**; flywheel launcher for object evacuation.
 
 <p align="center">
+<caption><b>Figure 2: Full Robot Competition Run (10x Speed)</b></caption>
+</p>
+<p align="center">
   <img src="attachments/robot_summer_fast.gif" width="400" />
 </p>
 
