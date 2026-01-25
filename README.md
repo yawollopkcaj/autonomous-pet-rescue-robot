@@ -9,7 +9,7 @@
 
 _A fully autonomous robot built entirely **from scratch** - integrating ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
 
-**Finalist** in a competitive challenge to rescue the most "pets" (stuffed animals) from a simulated burning building in the shortest time.
+## **3rd place** team in a competitive challenge to rescue the most "pets" (stuffed animals) from a simulated burning building in the shortest time.
 
 ---
 
