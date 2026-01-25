@@ -7,14 +7,23 @@
   <img src="attachments/team_photo.jpeg" alt="Robot" width="600">
 </p>
 
-_A 3rd place 🥉 fully autonomous robot built entirely **from scratch** - integrating ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
+_A 3rd place 🥉 autonomous robot built entirely **from scratch** - integrating ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
 
 ---
 
 ## Overview
-Our team of four designed, built, and programmed an autonomous pet-rescue robot over two months, working ~80 hours/week in a dedicated project lab. The robot navigated a multi-terrain course, located "pets" via IR and computer vision, picked them up with a robotic arm, and launched them to safety via a custom flywheel mechanism.
 
-Key features:
+We designed, built, and programmed an autonomous pet-rescue robot over two months, working ~80 hours/week in a dedicated project lab, for the **Engineering Physics summer robotics competition.** Teams of 4 were tasked with designing an autonomous robot to complete a two-minute rescue challenge. The course featured ramps, debris, and elevated platforms, with plush "pets" hidden throughout. Robots had to detect the pets, retrieve them, and return them safely to a designated zone or by using a final zipline. Strict rules, such as fitting inside a 12x12x12 size limit, placed heavy constraints on the design.
+
+<p align="center">
+<caption><b>Robot Competition Course Layout</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aa6bccf3-559d-47b6-8937-c6fc9b7ad8ae" width="400" />
+</p>
+
+## Technical Highlights
+
 - **Custom hardware**: Designed and fabricated all PCBs and electrical circuits in-house.
 - **Full-stack control**: Firmware in **C** using **ESP-IDF + FreeRTOS**; computer vision on Raspberry Pi 4.
 - **Perception & ML**: Custom-trained **YOLOv5** Nano model for live object detection with optimized hyperparameters.
