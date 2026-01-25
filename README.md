@@ -7,9 +7,7 @@
   <img src="attachments/team_photo.jpeg" alt="Robot" width="600">
 </p>
 
-_A fully autonomous robot built entirely **from scratch** - integrating ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
-
-## **3rd place** team in a competitive challenge to rescue the most "pets" (stuffed animals) from a simulated burning building in the shortest time.
+_A 3rd place 🥉 fully autonomous robot built entirely **from scratch** - integrating ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
 
 ---
 
