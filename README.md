@@ -1,7 +1,7 @@
 # Autonomous Pet-Rescue Robot
 
 <p align="center">
-<caption><b>Team 6 Group Photo</b></caption>
+<caption><b>Team 6 Group Photo (left to right): Logan Hilbert, Joshua Himmons, Jack Polloway (Me), Ed Ashenhurst</b></caption>
 </p>
 <p align="center">
   <img src="attachments/team_photo.jpeg" alt="Robot" width="600">
