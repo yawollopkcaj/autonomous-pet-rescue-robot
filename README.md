@@ -161,7 +161,7 @@ Every model was made in OnShape and split fabrication across laser-cut PMMA, mil
 * The flywheel launcher uses TPU wheels with embedded brass nuts and steel bead pockets. We paused prints to insert weights, then sealed them to add rotational inertia.
 
 <p align="center">
-<caption><b>Flywheel Launcher Demo</b></caption>
+<caption><b>Pretty Cool Flywheel Launcher Demo</b></caption>
 </p>
 <div align="center">
   <video src="https://github.com/user-attachments/assets/b67d5974-4e04-4dbf-9320-267533705a19" width="600" controls="controls"></video>
