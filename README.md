@@ -83,8 +83,19 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 
 * **Brain PCB:** Hosts an ESP32-WROOM module, pluggable headers for every peripheral (IR sensors, MG90S servos, beacon photodiodes, shooter FET), level shifting, and an event-button interface.
 
-<img width="967" height="588" alt="image" src="https://github.com/user-attachments/assets/6aca778b-7bae-4ca6-9a3e-2422051eed8b" />
-<img width="8267" height="5846" alt="image" src="https://github.com/user-attachments/assets/39e1197e-30d7-4499-84a0-7fc1d6f9925f" />
+<p align="center">
+<caption><b>Brain PCB CAD Model</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6aca778b-7bae-4ca6-9a3e-2422051eed8b" width="400" />
+</p>
+
+<p align="center">
+<caption><b>Brain PCB Circuit Layout</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/39e1197e-30d7-4499-84a0-7fc1d6f9925f" width="400" />
+</p>
 
 * **H-Bridge PCBs:** A four-channel MOSFET stage with optocoupled logic, a BJT clamp, and high-side drive transistors so we could source current into 12 V motors without toasting GPIO. Missing current-limit resistors on the optocouplers meant extra rework, but once fixed the FreeRTOS `h_bridge` driver could ramp both sides with mutex-protected LEDC updates.
 
