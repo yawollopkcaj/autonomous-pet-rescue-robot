@@ -149,7 +149,7 @@ Every model was made in OnShape and split fabrication across laser-cut PMMA, mil
 <caption><b>Flywheel Launcher</b></caption>
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ac82dab9-c66e-4189-ac50-349f5ca927f7" width="400" />
+  <img src="https://github.com/user-attachments/assets/ac82dab9-c66e-4189-ac50-349f5ca927f7" width="200" />
 </p>
 
 ---
