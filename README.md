@@ -165,7 +165,7 @@ Every model was made in OnShape and split fabrication across laser-cut PMMA, mil
 ## My Contributions
 **Role:** Software & Electrical Systems Engineer  
 
-- **Machine Learning & Computer Vision**
+- **Machine Learning & Computer Vision:**
   - Custom-trained YOLOv5 Nano model for detecting pets on-course.
   - Tuned hyperparameters, validated model accuracy, and benchmarked performance.
   - Optimized Raspberry Pi OS (Linux based) for real-time inference:
@@ -174,19 +174,19 @@ Every model was made in OnShape and split fabrication across laser-cut PMMA, mil
     - Performance profiling and bottleneck removal
   - Integrated ML output with robotic arm targeting via UART communication.
 
-- **Signal Processing**
+- **Signal Processing:**
   - Designed FFT-based algorithms to detect a 10 kHz central IR beacon for positional tracking.
   - Built FFT-based IR emission/reception for autonomous control, filtering specific frequency bands.
   - Applied convolutional signal matching on IR sensor streams to robustly identify “pet” targets and filter out environmental noise.
 
-- **Firmware Development**
+- **Firmware Development:**
   - Wrote FreeRTOS tasks for navigation, arm control, and sensor fusion on ESP32.
   - Implemented custom sensor drivers and UART drivers for Pi–ESP32 communication.
   - Used thread-safe practices by incorperating mutexes, semephores, and event groups for inter-task dependencies
   - Developed Python GUIs for validating and testing sensor data and hardware.
   - Engineered inverse kinematic algorithms.
 
-- **Electrical Hardware**
+- **Electrical Hardware:**
   - Designed PCB layouts for motor drivers, sensor interfaces, and communication buses.
   - Built custom H-bridges for DC motor control.
   - Defined electrical architecture to integrate all subsystems safely and efficiently.
@@ -194,15 +194,15 @@ Every model was made in OnShape and split fabrication across laser-cut PMMA, mil
 ---
 
 ## Notable Challenges
-- **IR interference from environment**  
+- **IR Interference from Environment:**  
   *Issue:* Sunlight and other IR sources caused erratic sensor behavior.  
   *Solution:* Added FFT filtering to isolate specific IR frequency bands (10 kHz), though we learned to apply stricter band-pass processing earlier in future designs.
 
-- **ADC sampling instability in ESP-IDF**  
+- **ADC Sampling Instability in ESP-IDF:**  
   *Issue:* Sampling ADC at 0.1 ms intervals caused timeouts and corrupted readings.  
   *Solution:* Rewrote sampling system with strategic task timing and priority management in FreeRTOS.
 
-- **Concurrency & communication stability**  
+- **Concurrency & Communication Stability:**  
   *Issue:* Serial communication between GUI and ESP32 caused data corruption and crashes.  
   *Solution:* Introduced mutexes, semaphores, and thread-safe buffers to prevent race conditions.
 
