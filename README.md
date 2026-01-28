@@ -75,10 +75,10 @@ Designed for modularity and fault-tolerance, the software stack integrates real-
 * **Pet Retreival:** We wrapped the arm driver in `lib/logic/sweep.c` so the robot can arc the base servo across a sector, watch for IR voltage dips from plushies, and then execute a coordinated reach/close/retract sequence before returning to FreeRTOS idle.
 
 <p align="center">
-<caption><b>Pet Retreival</b></caption>
+<caption><b>Pet Retreival Demo</b></caption>
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e8cdd63e-0ce2-483c-a2af-7c3c65af16ec" width="300" />
+  <img src="https://github.com/user-attachments/assets/1ebefd79-805d-4cbe-b22b-fdc6cd615331" width="300" />
 </p> 
 
 * **Inter-Board Communication:** `lib/serial_comm/serial_protocol.c` packages control frames into framed JSON over UART so either ESP32 (or the Python desktop app) can push PID gains, arm poses, or fire commands. Each packet is mutex guarded to keep telemetry streaming while commands update.
