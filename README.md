@@ -7,11 +7,7 @@
   <img src="attachments/team_photo.jpeg" alt="Robot" width="600">
 </p>
 
-<caption><b>CAD Model of the Final Robot</b></caption>
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/7935f33d-8b8f-4cf2-b689-649337e63b1d" alt="Robot" width="600">
-</p>
+
 
 _A 3rd place 🥉 autonomous robot built entirely **from scratch** - integrating ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
 
@@ -36,6 +32,13 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 - **Signal processing**: FFT-based IR beacon tracking and frequency-specific control.
 - **Multi-sensor navigation**: IR line following with phototransistors and emitters, beacon localization, and ML vision.
 - **Advanced actuation**: Robotic arm with **inverse kinematics**; flywheel launcher for object evacuation.
+
+<p align="center">
+<caption><b>CAD Model of the Final Design</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7935f33d-8b8f-4cf2-b689-649337e63b1d" alt="Robot" width="600">
+</p>
 
 <p align="center">
 <caption><b>Full Robot Competition Run (10x Speed)</b></caption>
