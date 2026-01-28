@@ -80,6 +80,14 @@ Designed for modularity and fault-tolerance, the software stack integrates real-
 * **Inter-Board Communication:** `lib/serial_comm/serial_protocol.c` packages control frames into framed JSON over UART so either ESP32 (or the Python desktop app) can push PID gains, arm poses, or fire commands. Each packet is mutex guarded to keep telemetry streaming while commands update.
 * **Python Telemetry:** `python/serial_monitor_gui.py` is our Tkinter cockpit. It auto-discovers serial devices, streams JSON into live charts, and exposes sliders for servo angles, Inverse Kinematic X/Y/θ targets, and shooter toggles. During integration we ran this alongside the FreeRTOS telemetry task that emits sensor voltages, basket lock status, and PID internals every 100 ms.
 * **Beacon Digital Signal Processing (DSP):** The ESP32 responsible for beacon tracking samples the IR photodiode at 50 kS/s and runs an arbitrary-frequency Goertzel transform (`src/ir_reciever/reciever_main.c`) to extract the 1 kHz rescue beacon versus 10 kHz noise. We steer by maximizing the 1 kHz magnitude and mirror the results to a DAC channel for quick scope debugging.
+* **Inverse Kinematics (IK):** We implemented a closed-form geometric solution to translate high-level $(x,y,\theta)$ commands into precise joint angles. The solver includes a bounding box check that rejects unreachable coordinates before they reach the servo drivers, ensuring the arm never attempts to fold into the chassis or overextend during autonomous retrieval.
+
+<p align="center">
+<caption><b>Arm Pose/Trajectory Visualization</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a672237b-a694-4772-85e4-96be69287164" width="600" />
+</p>
 
 ### Electrical Architecture
 
@@ -185,7 +193,7 @@ Every model was made in OnShape and split fabrication across laser-cut PMMA, mil
 
 ---
 
-## Key Challenges
+## Notable Challenges
 - **IR interference from environment**  
   *Issue:* Sunlight and other IR sources caused erratic sensor behavior.  
   *Solution:* Added FFT filtering to isolate specific IR frequency bands (10 kHz), though we learned to apply stricter band-pass processing earlier in future designs.
@@ -201,6 +209,7 @@ Every model was made in OnShape and split fabrication across laser-cut PMMA, mil
 ---
 
 ## Links
+
 -  [ESP-IDF Firmware Repository](https://github.com/enph-summer-2025/rollingohms)
 -  [Machine Learning Repository](https://github.com/enph-summer-2025/computer_vision)  
 -  [PCB Design Repository](https://github.com/enph-summer-2025/rollings-ohms-pcbs)  
