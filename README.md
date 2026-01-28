@@ -142,8 +142,10 @@ The robot's electrical systems were broken down into three PCBs (fabricated at J
 Every model was made in OnShape and split fabrication across laser-cut PMMA, milled aluminum brackets, and 3D printed TPU/PLA. Some highlights include:
 
 * Dual shrouds shielded the IR line sensors and the beacon photodiodes from arena lighting, tightening our ADC noise spread (and justifying the low-pass filtering in firmware).
-* The flywheel launcher uses TPU wheels with embedded brass nuts and steel bead pockets. We paused prints to insert weights, then sealed them to add rotational inertia.
 * The arm combines 3D printed links with laser-cut Delrin grabbers.
+* The flywheel launcher uses TPU wheels with embedded brass nuts and steel bead pockets. We paused prints to insert weights, then sealed them to add rotational inertia.
+
+![output](https://github.com/user-attachments/assets/ac82dab9-c66e-4189-ac50-349f5ca927f7)
 
 ---
 
