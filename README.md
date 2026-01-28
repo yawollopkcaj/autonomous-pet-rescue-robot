@@ -7,6 +7,12 @@
   <img src="attachments/team_photo.jpeg" alt="Robot" width="600">
 </p>
 
+<caption><b>CAD Model of the Final Robot</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7935f33d-8b8f-4cf2-b689-649337e63b1d" alt="Robot" width="600">
+</p>
+
 _A 3rd place 🥉 autonomous robot built entirely **from scratch** - integrating ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
 
 ---
