@@ -42,17 +42,6 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 
 ---
 
-## System Architecture
-
-<p align="center">
-<caption><b>Figure 1: System Architecture Diagram</b></caption>
-</p>
-<p align="center">
-  <img src="attachments/pet-rescue_robot_system_architecture.png" width="600" />
-</p> 
-
----
-
 ## Results
 - **Finalist** in competition with consistently 60% pet rescue.
 - Reduced navigation and targeting errors by 50% through sensor calibration and ML tuning.
@@ -69,6 +58,13 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 ---
 
 ## Technical Deep Dive
+
+<p align="center">
+<caption><b>Figure 1: System Architecture Diagram</b></caption>
+</p>
+<p align="center">
+  <img src="attachments/pet-rescue_robot_system_architecture.png" width="600" />
+</p> 
 
 ### Embedded Architecture
 
