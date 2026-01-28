@@ -82,7 +82,7 @@ Designed for modularity and fault-tolerance, the software stack integrates real-
 </div>
 
 <p align="center">
-<caption><b>Computer Vision Model Eval</b></caption>
+<caption><b>Computer Vision Detection Model Eval</b></caption>
 </p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b75aa2a4-869a-487b-aa01-308cee6dddec" width="600" />
