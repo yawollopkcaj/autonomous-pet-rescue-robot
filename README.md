@@ -7,8 +7,6 @@
   <img src="attachments/team_photo.jpeg" alt="Robot" width="600">
 </p>
 
-
-
 _A 3rd place 🥉 autonomous robot built entirely **from scratch** - integrating ESP-IDF/FreeRTOS firmware, Python-based signal processing, YOLOv5 computer vision, and advanced robotic control algorithms._
 
 ---
@@ -23,6 +21,8 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 <p align="center">
   <img src="https://github.com/user-attachments/assets/aa6bccf3-559d-47b6-8937-c6fc9b7ad8ae" width="400" />
 </p>
+
+--- 
 
 ## Technical Highlights
 
