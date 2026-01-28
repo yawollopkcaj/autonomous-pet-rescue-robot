@@ -78,11 +78,11 @@ Designed for modularity and fault-tolerance, the software stack integrates real-
 <caption><b>Pet Retreival Demo</b></caption>
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/94b97a61-a736-418f-b6ff-48f06b490dec" width="300" />
+  <img src="https://github.com/user-attachments/assets/c67e97f7-d7c6-4598-a8e3-ca60bf238dcb" width="300" />
 </p> 
 
 
-
+https://github.com/user-attachments/assets/c67e97f7-d7c6-4598-a8e3-ca60bf238dcb
 
 
 * **Inter-Board Communication:** `lib/serial_comm/serial_protocol.c` packages control frames into framed JSON over UART so either ESP32 (or the Python desktop app) can push PID gains, arm poses, or fire commands. Each packet is mutex guarded to keep telemetry streaming while commands update.
