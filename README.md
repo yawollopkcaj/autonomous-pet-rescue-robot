@@ -70,9 +70,9 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 
 Designed for modularity and fault-tolerance, the software stack integrates real-time control with high-level telemetry across a dual-core architecture:
 
-* **FreeRTOS ESP32 Stack:** A main ESP32 orchestrated the drive, arm, and launcher tasks `src/complete_robot/complete_robot_main.c`, while a second board handled the beacon alignment and high-speed telemetry. Everything ran as FreeRTOS tasks so the PID line follower, arm inverse kinematics, and shooter safety interlocks could run concurrently without starving each other.
+* **FreeRTOS ESP32 Stack:** A main ESP32 orchestrated the drive, arm, and launcher tasks `src/complete_robot/complete_robot_main.c`, while a second board handled the beacon alignment and high-speed telemetry, and a Raspberry Pi running embedded Linux handled computer vision. Everything on an ESP32 ran as FreeRTOS tasks so the PID line follower, arm inverse kinematics, and shooter safety interlocks could run concurrently without starving each other.
 * **Line Following PID:** The `lib/tasks/drive_system.c` task reads dual IR reflectance sensors at 10 ms intervals and applies a PID correction around a 900 mV midpoint. When both sensors see floor, we fall back to a slow spin using the last-known line side—this saved countless runs during testing.
-* **Pet Retreival:** We wrapped the arm driver in `lib/logic/sweep.c` so the robot can arc the base servo across a sector, watch for IR voltage dips from plushies, and then execute a coordinated reach/close/retract sequence before returning to FreeRTOS idle.
+* **Pet Retrieval & Perception:** We encapsulated the arm driver within `lib/logic/sweep.c` to manage autonomous retrieval. The system arcs the base servo to scan for targets using either IR sensors (detecting voltage dips) or Computer Vision (via UART). Upon detection, the robot centers on the target, executes a coordinated reach/close/retract sequence, and returns the task to a FreeRTOS idle state.
 
 <p align="center">
 <caption><b>Pet Retreival & Line Following Demo</b></caption>
@@ -81,7 +81,7 @@ Designed for modularity and fault-tolerance, the software stack integrates real-
   <video src="https://github.com/user-attachments/assets/c67e97f7-d7c6-4598-a8e3-ca60bf238dcb" width="600" controls="controls"></video>
 </div>
 
-* **Inter-Board Communication:** `lib/serial_comm/serial_protocol.c` packages control frames into framed JSON over UART so either ESP32 (or the Python desktop app) can push PID gains, arm poses, or fire commands. Each packet is mutex guarded to keep telemetry streaming while commands update.
+* **Inter-Board Communication:** `lib/serial_comm/serial_protocol.c` packages control frames into framed JSON over UART so either ESP32 (or the Python desktop app and Raspberry Pi) can push PID gains, arm poses, or fire commands. Each packet is mutex guarded to keep telemetry streaming while commands update.
 * **Python Telemetry:** `python/serial_monitor_gui.py` is our Tkinter cockpit. It auto-discovers serial devices, streams JSON into live charts, and exposes sliders for servo angles, Inverse Kinematic X/Y/θ targets, and shooter toggles. During integration we ran this alongside the FreeRTOS telemetry task that emits sensor voltages, basket lock status, and PID internals every 100 ms.
 * **Beacon Digital Signal Processing (DSP):** The ESP32 responsible for beacon tracking samples the IR photodiode at 50 kS/s and runs an arbitrary-frequency Goertzel transform (`src/ir_reciever/reciever_main.c`) to extract the 1 kHz rescue beacon versus 10 kHz noise. We steer by maximizing the 1 kHz magnitude and mirror the results to a DAC channel for quick scope debugging.
 * **Inverse Kinematics (IK):** We implemented a closed-form geometric solution to translate high-level $(x,y,\theta)$ commands into precise joint angles. The solver includes a bounding box check that rejects unreachable coordinates before they reach the servo drivers, ensuring the arm never attempts to fold into the chassis or overextend during autonomous retrieval.
