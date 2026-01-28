@@ -78,8 +78,12 @@ Designed for modularity and fault-tolerance, the software stack integrates real-
 <caption><b>Pet Retreival Demo</b></caption>
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1ebefd79-805d-4cbe-b22b-fdc6cd615331" width="300" />
+  <img src="https://github.com/user-attachments/assets/94b97a61-a736-418f-b6ff-48f06b490dec" width="300" />
 </p> 
+
+
+
+
 
 * **Inter-Board Communication:** `lib/serial_comm/serial_protocol.c` packages control frames into framed JSON over UART so either ESP32 (or the Python desktop app) can push PID gains, arm poses, or fire commands. Each packet is mutex guarded to keep telemetry streaming while commands update.
 * **Python Telemetry:** `python/serial_monitor_gui.py` is our Tkinter cockpit. It auto-discovers serial devices, streams JSON into live charts, and exposes sliders for servo angles, Inverse Kinematic X/Y/θ targets, and shooter toggles. During integration we ran this alongside the FreeRTOS telemetry task that emits sensor voltages, basket lock status, and PID internals every 100 ms.
