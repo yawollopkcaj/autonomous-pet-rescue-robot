@@ -40,13 +40,6 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
   <img src="https://github.com/user-attachments/assets/7935f33d-8b8f-4cf2-b689-649337e63b1d" alt="Robot" width="600">
 </p>
 
-<p align="center">
-<caption><b>Full Robot Competition Run (10x Speed)</b></caption>
-</p>
-<p align="center">
-  <img src="attachments/robot_summer_fast.gif" width="400" />
-</p>
-
 ---
 
 ## System Architecture
@@ -65,6 +58,13 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 - Reduced navigation and targeting errors by 50% through sensor calibration and ML tuning.
 - Integrated hardware, firmware, and ML with no major system failures during final runs.
 - Achieved stable 10+ FPS real-time object detection on Raspberry Pi 4 with YOLOv5 Nano.
+
+<p align="center">
+<caption><b>Full Robot Competition Run (10x Speed)</b></caption>
+</p>
+<p align="center">
+  <img src="attachments/robot_summer_fast.gif" width="400" />
+</p>
 
 ---
 
