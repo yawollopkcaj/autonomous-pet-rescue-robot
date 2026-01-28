@@ -75,11 +75,18 @@ Designed for modularity and fault-tolerance, the software stack integrates real-
 * **Pet Retrieval & Perception:** We encapsulated the arm driver within `lib/logic/sweep.c` to manage autonomous retrieval. The system arcs the base servo to scan for targets using either IR sensors (detecting voltage dips) or Computer Vision (via UART). Upon detection, the robot centers on the target, executes a coordinated reach/close/retract sequence, and returns the task to a FreeRTOS idle state.
 
 <p align="center">
-<caption><b>Pet Retreival & Line Following Demo</b></caption>
+<caption><b>Pet Retreival (IR) & Line Following Demo</b></caption>
 </p>
 <div align="center">
   <video src="https://github.com/user-attachments/assets/c67e97f7-d7c6-4598-a8e3-ca60bf238dcb" width="600" controls="controls"></video>
 </div>
+
+<p align="center">
+<caption><b>Computer Vision Model Eval</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b75aa2a4-869a-487b-aa01-308cee6dddec" width="600" />
+</p> 
 
 * **Inter-Board Communication:** `lib/serial_comm/serial_protocol.c` packages control frames into framed JSON over UART so either ESP32 (or the Python desktop app and Raspberry Pi) can push PID gains, arm poses, or fire commands. Each packet is mutex guarded to keep telemetry streaming while commands update.
 * **Python Telemetry:** `python/serial_monitor_gui.py` is our Tkinter cockpit. It auto-discovers serial devices, streams JSON into live charts, and exposes sliders for servo angles, Inverse Kinematic X/Y/θ targets, and shooter toggles. During integration we ran this alongside the FreeRTOS telemetry task that emits sensor voltages, basket lock status, and PID internals every 100 ms.
