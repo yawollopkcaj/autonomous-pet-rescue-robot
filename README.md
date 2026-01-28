@@ -72,6 +72,8 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 
 ### Embedded Architecture
 
+Designed for modularity and fault-tolerance, the software stack integrates real-time control with high-level telemetry across a dual-core architecture:
+
 * **FreeRTOS ESP32 Stack:** A main ESP32 orchestrated the drive, arm, and launcher tasks `src/complete_robot/complete_robot_main.c`, while a second board handled the beacon alignment and high-speed telemetry. Everything ran as FreeRTOS tasks so the PID line follower, arm inverse kinematics, and shooter safety interlocks could run concurrently without starving each other.
 * **Line Following PID:** The `lib/tasks/drive_system.c` task reads dual IR reflectance sensors at 10 ms intervals and applies a PID correction around a 900 mV midpoint. When both sensors see floor, we fall back to a slow spin using the last-known line side—this saved countless runs during testing.
 * **Pet Retreival:** We wrapped the arm driver in `lib/logic/sweep.c` so the robot can arc the base servo across a sector, watch for IR voltage dips from plushies, and then execute a coordinated reach/close/retract sequence before returning to FreeRTOS idle.
@@ -80,6 +82,8 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 * **Beacon Digital Signal Processing (DSP):** The ESP32 responsible for beacon tracking samples the IR photodiode at 50 kS/s and runs an arbitrary-frequency Goertzel transform (`src/ir_reciever/reciever_main.c`) to extract the 1 kHz rescue beacon versus 10 kHz noise. We steer by maximizing the 1 kHz magnitude and mirror the results to a DAC channel for quick scope debugging.
 
 ### Electrical Architecture
+
+The robot's electrical systems were broken down into three PCBs (fabricated at JLCPCB):
 
 * **Brain PCB:** Hosts an ESP32-WROOM module, pluggable headers for every peripheral (IR sensors, MG90S servos, beacon photodiodes, shooter FET), level shifting, and an event-button interface.
 
@@ -131,6 +135,11 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 
 ### Mechanical Systems
 
+Every model was made in OnShape and split fabrication across laser-cut PMMA, milled aluminum brackets, and 3D printed TPU/PLA. Some highlights include:
+
+* Dual shrouds shielded the IR line sensors and the beacon photodiodes from arena lighting, tightening our ADC noise spread (and justifying the low-pass filtering in firmware).
+* The flywheel launcher uses TPU wheels with embedded brass nuts and steel bead pockets. We paused prints to insert weights, then sealed them to add rotational inertia.
+* The arm combines 3D printed links with laser-cut Delrin grabbers.
 
 ---
 
