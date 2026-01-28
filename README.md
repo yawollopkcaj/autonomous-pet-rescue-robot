@@ -87,25 +87,47 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 <caption><b>Brain PCB CAD Model</b></caption>
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6aca778b-7bae-4ca6-9a3e-2422051eed8b" width="400" />
+  <img src="https://github.com/user-attachments/assets/6aca778b-7bae-4ca6-9a3e-2422051eed8b" width="600" />
 </p>
 
 <p align="center">
-<caption><b>Brain PCB Circuit Layout</b></caption>
+<caption><b>Brain PCB Circuit Diagram</b></caption>
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/39e1197e-30d7-4499-84a0-7fc1d6f9925f" width="400" />
+  <img src="https://github.com/user-attachments/assets/39e1197e-30d7-4499-84a0-7fc1d6f9925f" width="600" />
 </p>
 
 * **H-Bridge PCBs:** A four-channel MOSFET stage with optocoupled logic, a BJT clamp, and high-side drive transistors so we could source current into 12 V motors without toasting GPIO. Missing current-limit resistors on the optocouplers meant extra rework, but once fixed the FreeRTOS `h_bridge` driver could ramp both sides with mutex-protected LEDC updates.
 
-<img width="1081" height="628" alt="image" src="https://github.com/user-attachments/assets/fa8f2567-3f04-4e30-8cdb-94f2507e3a5c" />
-<img width="5846" height="4134" alt="image" src="https://github.com/user-attachments/assets/e2464a4e-0624-40bb-a101-6c78309b2d16" />
+<p align="center">
+<caption><b>H-Bridge PCB CAD Model</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fa8f2567-3f04-4e30-8cdb-94f2507e3a5c" width="600" />
+</p>
+
+<p align="center">
+<caption><b>H-Bridge PCB Circuit Diagram</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e2464a4e-0624-40bb-a101-6c78309b2d16" width="600" />
+</p>
 
 * **Power Distribution PCB:** Breaks a 15 V LiPo into fused rails for logic, arm, and launcher subsystems.
 
-<img width="688" height="699" alt="image" src="https://github.com/user-attachments/assets/444c5c85-564b-406d-b738-4fd0bb6002a6" />
-<img width="4134" height="2913" alt="image" src="https://github.com/user-attachments/assets/b15cd88a-9591-4d42-ba53-99da1ebc3a74" />
+<p align="center">
+<caption><b>Power Distro PCB CAD Model</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/444c5c85-564b-406d-b738-4fd0bb6002a6" width="600" />
+</p>
+
+<p align="center">
+<caption><b>Power Distro PCB Circuit Diagram</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b15cd88a-9591-4d42-ba53-99da1ebc3a74" width="600" />
+</p>
 
 ### Mechanical Systems
 
