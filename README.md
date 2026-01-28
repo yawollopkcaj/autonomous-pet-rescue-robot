@@ -49,6 +49,25 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 
 ---
 
+## System Architecture
+
+<p align="center">
+<caption><b>Figure 1: System Architecture Diagram</b></caption>
+</p>
+<p align="center">
+  <img src="attachments/pet-rescue_robot_system_architecture.png" width="600" />
+</p> 
+
+---
+
+## Results
+- **Finalist** in competition with consistently 60% pet rescue.
+- Reduced navigation and targeting errors by 50% through sensor calibration and ML tuning.
+- Integrated hardware, firmware, and ML with no major system failures during final runs.
+- Achieved stable 10+ FPS real-time object detection on Raspberry Pi 4 with YOLOv5 Nano.
+
+---
+
 ## My Contributions
 **Role:** Software & Electrical Systems Engineer  
 
@@ -79,29 +98,6 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 
 ---
 
-## Challenges & Solutions
-- **IR interference from environment**  
-  *Issue:* Sunlight and other IR sources caused erratic sensor behavior.  
-  *Solution:* Added FFT filtering to isolate specific IR frequency bands (10 kHz), though we learned to apply stricter band-pass processing earlier in future designs.
-
-- **ADC sampling instability in ESP-IDF**  
-  *Issue:* Sampling ADC at 0.1 ms intervals caused timeouts and corrupted readings.  
-  *Solution:* Rewrote sampling system with strategic task timing and priority management in FreeRTOS.
-
-- **Concurrency & communication stability**  
-  *Issue:* Serial communication between GUI and ESP32 caused data corruption and crashes.  
-  *Solution:* Introduced mutexes, semaphores, and thread-safe buffers to prevent race conditions.
-
----
-
-## Results
-- **Finalist** in competition with consistently 60% pet rescue.
-- Reduced navigation and targeting errors by 50% through sensor calibration and ML tuning.
-- Integrated hardware, firmware, and ML with no major system failures during final runs.
-- Achieved stable 10+ FPS real-time object detection on Raspberry Pi 4 with YOLOv5 Nano.
-
----
-
 ## Technologies Used
 **Hardware:**  
 ESP32 microcontroller, Raspberry Pi 4 + Pi Camera, MG996R servos, ToF sensors (VL6180X), Hall effect sensors, IR emitters & phototransistors, custom PCBs.
@@ -117,18 +113,22 @@ KiCad, OnShape, VS Code, Platform IO, GitHub, Logic Analyzer, Oscilloscope, Linu
 
 ---
 
-## System Architecture
+## Key Challenges
+- **IR interference from environment**  
+  *Issue:* Sunlight and other IR sources caused erratic sensor behavior.  
+  *Solution:* Added FFT filtering to isolate specific IR frequency bands (10 kHz), though we learned to apply stricter band-pass processing earlier in future designs.
 
-<p align="center">
-<caption><b>Figure 1: System Architecture Diagram</b></caption>
-</p>
-<p align="center">
-  <img src="attachments/pet-rescue_robot_system_architecture.png" width="600" />
-</p> 
+- **ADC sampling instability in ESP-IDF**  
+  *Issue:* Sampling ADC at 0.1 ms intervals caused timeouts and corrupted readings.  
+  *Solution:* Rewrote sampling system with strategic task timing and priority management in FreeRTOS.
+
+- **Concurrency & communication stability**  
+  *Issue:* Serial communication between GUI and ESP32 caused data corruption and crashes.  
+  *Solution:* Introduced mutexes, semaphores, and thread-safe buffers to prevent race conditions.
 
 ---
 
-## More Information
+## Links
 -  [ESP-IDF Firmware Repository](https://github.com/enph-summer-2025/rollingohms)
 -  [Machine Learning Repository](https://github.com/enph-summer-2025/computer_vision)  
 -  [PCB Design Repository](https://github.com/enph-summer-2025/rollings-ohms-pcbs)  
