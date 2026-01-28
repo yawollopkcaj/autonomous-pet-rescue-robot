@@ -90,6 +90,7 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
   - Implemented custom sensor drivers and UART drivers for Pi–ESP32 communication.
   - Used thread-safe practices by incorperating mutexes, semephores, and event groups for inter-task dependencies
   - Developed Python GUIs for validating and testing sensor data and hardware.
+  - Engineered inverse kinematic algorithms.
 
 - **Electrical Hardware**
   - Designed PCB layouts for motor drivers, sensor interfaces, and communication buses.
@@ -99,17 +100,13 @@ We designed, built, and programmed an autonomous pet-rescue robot over two month
 ---
 
 ## Technologies Used
-**Hardware:**  
-ESP32 microcontroller, Raspberry Pi 4 + Pi Camera, MG996R servos, ToF sensors (VL6180X), Hall effect sensors, IR emitters & phototransistors, custom PCBs.
+**Hardware:**: ESP32 microcontroller, Raspberry Pi 4 + Pi Camera, MG996R servos, ToF sensors (VL6180X), Hall effect sensors, IR emitters & phototransistors, custom PCBs.
 
-**Software & Firmware:**  
-ESP-IDF, FreeRTOS, C, Python, YOLOv5, OpenCV, NumPy, Matplotlib, TensorFlow Lite.
+**Software & Firmware:**: ESP-IDF, FreeRTOS, C, Python, YOLOv5, OpenCV, NumPy, Matplotlib, TensorFlow Lite.
 
-**Signal Processing:**  
-FFT-based detection & filtering, band-pass IR frequency tracking.
+**Signal Processing:**: FFT-based detection & filtering, band-pass IR frequency tracking.
 
-**Tools:**  
-KiCad, OnShape, VS Code, Platform IO, GitHub, Logic Analyzer, Oscilloscope, Linux SSH.
+**Tools:**: KiCad, OnShape, VS Code, Platform IO, GitHub, Logic Analyzer, Oscilloscope, Linux SSH.
 
 ---
 
