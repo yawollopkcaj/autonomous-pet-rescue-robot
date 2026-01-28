@@ -75,7 +75,7 @@ Designed for modularity and fault-tolerance, the software stack integrates real-
 * **Pet Retreival:** We wrapped the arm driver in `lib/logic/sweep.c` so the robot can arc the base servo across a sector, watch for IR voltage dips from plushies, and then execute a coordinated reach/close/retract sequence before returning to FreeRTOS idle.
 
 <p align="center">
-<caption><b>Pet Retreival Demo</b></caption>
+<caption><b>Pet Retreival & Line Following Demo</b></caption>
 </p>
 <div align="center">
   <video src="https://github.com/user-attachments/assets/c67e97f7-d7c6-4598-a8e3-ca60bf238dcb" width="600" controls="controls"></video>
