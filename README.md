@@ -180,37 +180,6 @@ Every model was made in OnShape and split fabrication across laser-cut PMMA, mil
 
 ---
 
-## My Contributions
-**Role:** Software & Electrical Systems Engineer  
-
-- **Machine Learning & Computer Vision:**
-  - Custom-trained YOLOv5 Nano model for detecting pets on-course.
-  - Tuned hyperparameters, validated model accuracy, and benchmarked performance.
-  - Optimized Raspberry Pi OS (Linux based) for real-time inference:
-    - Overclocking
-    - SSH development workflow
-    - Performance profiling and bottleneck removal
-  - Integrated ML output with robotic arm targeting via UART communication.
-
-- **Signal Processing:**
-  - Designed FFT-based algorithms to detect a 10 kHz central IR beacon for positional tracking.
-  - Built FFT-based IR emission/reception for autonomous control, filtering specific frequency bands.
-  - Applied convolutional signal matching on IR sensor streams to robustly identify “pet” targets and filter out environmental noise.
-
-- **Firmware Development:**
-  - Wrote FreeRTOS tasks for navigation, arm control, and sensor fusion on ESP32.
-  - Implemented custom sensor drivers and UART drivers for Pi–ESP32 communication.
-  - Used thread-safe practices by incorperating mutexes, semephores, and event groups for inter-task dependencies
-  - Developed Python GUIs for validating and testing sensor data and hardware.
-  - Engineered inverse kinematic algorithms.
-
-- **Electrical Hardware:**
-  - Designed PCB layouts for motor drivers, sensor interfaces, and communication buses.
-  - Built custom H-bridges for DC motor control.
-  - Defined electrical architecture to integrate all subsystems safely and efficiently.
-
----
-
 ## Notable Challenges
 
 - **IR Interference from Environment:**  
