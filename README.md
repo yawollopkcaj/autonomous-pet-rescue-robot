@@ -145,7 +145,12 @@ Every model was made in OnShape and split fabrication across laser-cut PMMA, mil
 * The arm combines 3D printed links with laser-cut Delrin grabbers.
 * The flywheel launcher uses TPU wheels with embedded brass nuts and steel bead pockets. We paused prints to insert weights, then sealed them to add rotational inertia.
 
-![output](https://github.com/user-attachments/assets/ac82dab9-c66e-4189-ac50-349f5ca927f7)
+<p align="center">
+<caption><b>Flywheel Launcher</b></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ac82dab9-c66e-4189-ac50-349f5ca927f7" width="400" />
+</p>
 
 ---
 
@@ -192,6 +197,7 @@ Every model was made in OnShape and split fabrication across laser-cut PMMA, mil
 ---
 
 ## Notable Challenges
+
 - **IR Interference from Environment:**  
   *Issue:* Sunlight and other IR sources caused erratic sensor behavior.  
   *Solution:* Added FFT filtering to isolate specific IR frequency bands (10 kHz), though we learned to apply stricter band-pass processing earlier in future designs.
